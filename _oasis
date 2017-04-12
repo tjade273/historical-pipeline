@@ -1,0 +1,23 @@
+OASISFormat: 0.4
+Name:        HistLing
+Version:     0.1
+Synopsis:    A historical linguitics pipeline
+Authors:     Tjaden Hess
+License:     MIT
+
+Description: A pipeline for deriving language phylogeny and proto-form reconstructions using the comparative method. 
+Plugins:     META (0.4), DevFiles (0.4)
+BuildTools: ocamlbuild
+
+
+
+SourceRepository master
+  Type: git
+  Location: https://github.com/tjade273/historical-pipeline.git
+  Branch: master
+  Browser: https://github.com/tjade273/historical-pipeline
+
+Executable "histling"
+  Path: src
+  MainIs: histling.ml
+
